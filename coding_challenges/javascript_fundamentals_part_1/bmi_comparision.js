@@ -12,10 +12,11 @@
   
 */
 
+const markWeight = 78,
+  markHeight = 1.69;
 
-const markWeight = 78, markHeight = 1.69;
-
-const johnWeight = 92, johnHeight = 1.95;
+const johnWeight = 92,
+  johnHeight = 1.95;
 
 const markBMI = markWeight / markHeight ** 2;
 const johnBMI = johnWeight / johnHeight ** 2;

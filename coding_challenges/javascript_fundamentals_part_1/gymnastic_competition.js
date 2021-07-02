@@ -21,8 +21,8 @@ const round3Koalas = 106;
 const totalDolphin = round1Dolphin + round2Dolphin + round3Dolphin;
 const totalKoalas = round1Koalas + round2Koalas + round3Koalas;
 
-const avgDolphin = (totalDolphin) / 3;
-const avgKoalas = (totalKoalas) / 3;
+const avgDolphin = totalDolphin / 3;
+const avgKoalas = totalKoalas / 3;
 
 console.log(`
 Team average scores :- 
@@ -30,11 +30,7 @@ Dolphin :- ${avgDolphin}
 Koalas :- ${avgKoalas}`);
 
 if (avgDolphin >= 100 || avgKoalas >= 100) {
-
-    if (avgDolphin > avgKoalas) console.log("Team dolphin is the winner! ");
-
-    else if (avgDolphin === avgKoalas) console.log("The match is a draw");
-
-    else console.log("Koalas is the winner");
-
+  if (avgDolphin > avgKoalas) console.log("Team dolphin is the winner! ");
+  else if (avgDolphin === avgKoalas) console.log("The match is a draw");
+  else console.log("Koalas is the winner");
 } else console.log("No one has won! ");
